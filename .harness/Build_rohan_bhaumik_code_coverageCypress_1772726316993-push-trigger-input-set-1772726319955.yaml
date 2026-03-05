@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_rohan_bhaumik_code_coverageCypress_1772726316993-push-trigger-input-set
+  identifier: Build_rohan_bhaumik_code_coverageCypress_1772726316993pushtriggerinputset
+  orgIdentifier: Tests_all_the_way
+  projectIdentifier: Testing_TI
+  pipeline:
+    identifier: Build_rohan_bhaumik_code_coverageCypress_1772726316993
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
