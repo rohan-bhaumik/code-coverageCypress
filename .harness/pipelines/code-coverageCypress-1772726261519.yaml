@@ -1,0 +1,33 @@
+pipeline:
+  name: Build the codeCoverageCypress project
+  identifier: Build_rohan_bhaumik_code_coverageCypress_1772726316993
+  projectIdentifier: Testing_TI
+  orgIdentifier: Tests_all_the_way
+  stages:
+    - stage:
+        name: Build
+        identifier: Build
+        type: CI
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Echo Welcome Message
+                  identifier: Echo_Welcome_Message
+                  spec:
+                    shell: Sh
+                    command: echo "Welcome to Harness CI"
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: org.connector_Github_d5a9
+        repoName: rohan-bhaumik/code-coverageCypress
+        build: <+input>
